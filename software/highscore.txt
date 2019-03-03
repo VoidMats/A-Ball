@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+0 name
+0 name
+0 name
+0 name
+0 name
+=======
+42960 llll
+25100 ggg
+16600 msdjf
+9650 hhdh
+7400 lll
+>>>>>>> d39218ac81597930da142d4c4a7666acaf7b2e92
