@@ -226,26 +226,14 @@ void Play_State::update_render_game()
     {
         it->update(boxes);
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> d39218ac81597930da142d4c4a7666acaf7b2e92
     for( auto it : moving_objects )
     {
         it->update(player);
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> d39218ac81597930da142d4c4a7666acaf7b2e92
     for( auto it : moving_objects )
     {
         it->update(bricks);
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> d39218ac81597930da142d4c4a7666acaf7b2e92
     for( auto it : moving_objects )
     {
         it->render(window);

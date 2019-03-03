@@ -35,25 +35,16 @@ public:
     Handles expiring powerup-effects.
     Pushes ball in case of overlap.
     */
-<<<<<<< HEAD
-    void update_player(std::vector<Solid_Object*> & walls,
-      std::vector<Solid_Object*> & m_obj, sf::Vector2f dir) override;
+    void update_player(std::vector<Solid_Object*> &walls,
+                       std::vector<Solid_Object*> &m_obj,
+                       sf::Vector2f dir) override;
+
+private:
     /*!
     Removes any powerup-effect from the player.
     */
     void rem_effect();
-private:
-    float x_sp{5};
-    float y_sp{2.5};
-    int type_effect{0};
-=======
-    void update_player(std::vector<Solid_Object*> &walls,
-                       std::vector<Solid_Object*> &m_obj,
-                       sf::Vector2f dir) override;
-private:
-    void rem_effect();
 
->>>>>>> d39218ac81597930da142d4c4a7666acaf7b2e92
     const float w_w{660};
     const float w_h{800};
     const float s_h{100};

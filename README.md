@@ -12,27 +12,28 @@ Download or clone the repository into a folder of your choice.
 Make sure you have a c++ compiler, supporting std=c++14.
 Enter the software folder inside the repository using your terminal.
 
-If you do not have sfml installed, type:
+If you do not have sfml or cmake installed, type:
 ```console
   $ sudo apt-get install libsfml-dev
+  $ sudo apt install cmake
 ```
 
 If you want to delete old cmake files, type:
 ```console
-  $ \rm -r CMakeCache.txt CMakeFiles/
+  $ rm -r CMakeCache.txt CMakeFiles/
 ```
 Type:
 ```console
-    cmake .
+  $ cmake .
 ```
 Type:
 ```console
-    make
+  $ make
 ```
 To start the game
 Type:
 ```console
-    ./sfml
+  $ ./sfml
 ```
 
 ## 2. Generating Doxygen
@@ -50,7 +51,7 @@ Resulting files found in the html and latex folders.
 
 A-Ball: A game where you control a paddle in space. Your goal is to destroy all the evil spacebricks by bouncing the ball around the battlefield. But be careful, you cannot allow the ball fall down into the abyss or you will lose a life. Sometimes when a brick is destroyed a mystical powerup will fall. Pick it up to gain special powers for a limited amount of time. However, not all powers are beneficial...
 
-## Keyboard controls
+### Keyboard controls
 
 Menu navigation:
 

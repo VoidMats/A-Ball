@@ -16,13 +16,9 @@
 #include "Textures.h"
 #include "Smart_Pointer.h"
 
-<<<<<<< HEAD
 /*!
  * \brief Class Game_Engine will create all necessary states and load/save all data connected to the game.
  */
-=======
->>>>>>> d39218ac81597930da142d4c4a7666acaf7b2e92
-
 class Game_Engine
 {
     //! Game_Engine() will create the game and read all the data necessary for the game.

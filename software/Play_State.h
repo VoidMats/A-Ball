@@ -17,18 +17,12 @@
 #include "Score.h"
 #include "Smart_Pointer.h"
 
-<<<<<<< HEAD
-/*!
- * \brief The Play_State class handle the game
- */
-=======
+
 //! The Play_State class handle the game, where the main task is to operate the movement
 //! and the rendering of all the objects in the gamefield. This class also recive the
 //! important information which is shown to the user. The public virtual function run
 //! will execute the game. When game is finished the score is sent back to the game
 //! engine with return.
->>>>>>> d39218ac81597930da142d4c4a7666acaf7b2e92
-
 class Play_State: public Key_Input
 {
     //! The Play_State class handle the game, where the main task is to operate the movement

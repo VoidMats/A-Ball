@@ -66,11 +66,7 @@ void Solid_Object::remove_obj(int idx)
     {
         if ( member_list[x]->get_name() == name )
         {
-<<<<<<< HEAD
-            Solid_Object *ptr = member_list[x];
-=======
             Solid_Object *ptr{ member_list[x] };
->>>>>>> d39218ac81597930da142d4c4a7666acaf7b2e92
             member_list.erase(begin(member_list)+x);
             delete ptr;
             break;

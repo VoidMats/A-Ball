@@ -177,19 +177,9 @@ void Game_Engine::read_score(std::string filename)
         cout << "Failure to read file: " << filename << endl;
         return;
     }
-<<<<<<< HEAD
-
-    for( string str; getline(ifs, str); )
-    {
-        size_t it = str.find(' ');
-        score = stoi( str.substr(0,it) );
-        name = str.substr(it+1);
-        score_list.push_back(make_pair(score, name));
-=======
     while( ifs >> _score >> name )
     {
         score_list.push_back(make_pair(_score, name));
->>>>>>> d39218ac81597930da142d4c4a7666acaf7b2e92
     }
 }
 

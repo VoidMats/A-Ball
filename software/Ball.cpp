@@ -173,11 +173,7 @@ void Ball::update(std::vector<Solid_Object*> & obstacles)
                 update_pos(obstacles[idx]);
 
                 std::random_device rd;
-<<<<<<< HEAD
-                std::uniform_int_distribution<int> chance(1, 10);
-=======
                 std::uniform_int_distribution<int> chance(1, 5);
->>>>>>> d39218ac81597930da142d4c4a7666acaf7b2e92
                 int spawn_pu{chance(rd)};
                 std::uniform_int_distribution<int> type(1, 5);
                 int pu_type{type(rd)};
