@@ -6,9 +6,6 @@
 #include "Textures.h"
 #include "Smart_Pointer.h"
 
-
-
-
 //! The Key_Input class handle the keyboard input of the game.
 
 class Key_Input
@@ -16,8 +13,8 @@ class Key_Input
 public:
     Key_Input(sf::RenderWindow *window, Textures *texture);
     virtual ~Key_Input() = default;
-    Key_Input(Key_Input const &other) = default;
-    Key_Input & operator = (Key_Input const &other) = default;
+    Key_Input(Key_Input const &copy) = default;
+    Key_Input &operator = (Key_Input const &copy) = default;
 
     //! Abstract function run() which are used for all State classes to be executed.
     virtual int run() = 0;
@@ -44,7 +41,8 @@ protected:
     Textures *texture;
     sf::Vector2f dir_1{0.0f, 0.0f};
     sf::Vector2f dir_2{0.0f, 0.0f};
-    Keys keys{};
+    Keys keys1{};
+    Keys keys2{};
     sf::Font font{};
 
 private:

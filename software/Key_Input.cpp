@@ -44,36 +44,36 @@ void Key_Input::on_key_use(bool pressed, sf::Keyboard::Key key)
     {
         // Player two
         case sf::Keyboard::Key::Up:
-            keys.up = pressed;
+            keys2.up = pressed;
             direction( false );
             break;
         case sf::Keyboard::Key::Down:
-            keys.down = pressed;
+            keys2.down = pressed;
             direction( false );
             break;
         case sf::Keyboard::Key::Left:
-            keys.left = pressed;
+            keys2.left = pressed;
             direction( false );
             break;
         case sf::Keyboard::Key::Right:
-            keys.right = pressed;
+            keys2.right = pressed;
             direction( false );
             break;
         // Player one
         case sf::Keyboard::Key::W:
-            keys.up = pressed;
+            keys1.up = pressed;
             direction( true );
             break;
         case sf::Keyboard::Key::S:
-            keys.down = pressed;
+            keys1.down = pressed;
             direction( true );
             break;
         case sf::Keyboard::Key::A:
-            keys.left = pressed;
+            keys1.left = pressed;
             direction( true );
             break;
         case sf::Keyboard::Key::D:
-            keys.right = pressed;
+            keys1.right = pressed;
             direction( true );
             break;
         default:
@@ -84,21 +84,29 @@ void Key_Input::direction( bool player_one )
 {
     float y{0};
     float x{0};
-    if ( keys.up )
-        y -= 1.0f;
-    if ( keys.down )
-        y += 1.0f;
-    if ( keys.left )
-        x -= 1.0f;
-    if ( keys.right )
-        x += 1.0f;
     if( player_one )
     {
+        if ( keys1.up )
+            y -= 1.0f;
+        if ( keys1.down )
+            y += 1.0f;
+        if ( keys1.left )
+            x -= 1.0f;
+        if ( keys1.right )
+            x += 1.0f;
         dir_1.x = x;
         dir_1.y = y;
     }
     else
     {
+        if ( keys2.up )
+            y -= 1.0f;
+        if ( keys2.down )
+            y += 1.0f;
+        if ( keys2.left )
+            x -= 1.0f;
+        if ( keys2.right )
+            x += 1.0f;
         dir_2.x = x;
         dir_2.y = y;
     }
